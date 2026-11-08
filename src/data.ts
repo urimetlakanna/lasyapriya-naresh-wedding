@@ -135,8 +135,8 @@ export type CropSpec = { source: "landscape" | "portrait"; fx: number; fy: numbe
 
 export const crops = {
   hero: { source: "landscape", index: 0, fx: 0.43, fy: 0.5, zoom: 1.04, r: 0.8 } as CropSpec,
-  bride: { source: "portrait", index: 5, fx: 0.5, fy: 0.48, zoom: 1.12, r: 0.8 } as CropSpec,
-  groom: { source: "portrait", index: 4, fx: 0.5, fy: 0.43, zoom: 1.08, r: 0.8 } as CropSpec,
+  bride: { source: "portrait", index: 8, fx: 0.5, fy: 0.48, zoom: 1.12, r: 0.8 } as CropSpec,
+  groom: { source: "portrait", index: 7, fx: 0.5, fy: 0.43, zoom: 1.08, r: 0.8 } as CropSpec,
   together: { source: "landscape", index: 1, fx: 0.5, fy: 0.5, zoom: 1, r: 1.5 } as CropSpec,
 };
 
