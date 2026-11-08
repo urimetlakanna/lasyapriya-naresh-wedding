@@ -82,9 +82,10 @@ export function Hero({ started }: { started: boolean }) {
             </span>
           </h1>
 
-          <p className="hero-anim mt-2 italic text-champagne/80" style={d(1100)}>
-            {t(couple.bride.nick) && `(${t(couple.bride.nick)})`} · {t(couple.groom.surname)}
-          </p>
+          <div className="hero-anim mt-2 space-y-1 italic text-champagne/80" style={d(1100)}>
+            <p>({t(couple.bride.nick)})</p>
+            <p>{t(couple.groom.surname)}</p>
+          </div>
 
           <div
             className="hero-anim mx-auto mt-7 inline-flex flex-col items-center gap-1 rounded-2xl border border-gold/50 bg-black/15 px-8 py-4 backdrop-blur-sm lg:mx-0 lg:items-start"

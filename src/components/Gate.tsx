@@ -88,11 +88,11 @@ export function Gate({ onOpen }: { onOpen: (l: Lang) => void }) {
           </div>
         </div>
 
-        <h1 className="font-script gold-text text-5xl leading-tight sm:text-7xl" style={{ animation: "rise-in 1.6s .6s both" }}>
-          {couple.bride.name.en} <span className="text-champagne">&amp;</span> {couple.groom.name.en}
+        <h1 className="max-w-[92vw] font-script gold-text text-3xl leading-tight sm:text-5xl lg:text-6xl" style={{ animation: "rise-in 1.6s .6s both" }}>
+          {couple.bride.full.en} <span className="text-champagne">&amp;</span> {couple.groom.name.en}
         </h1>
         <p className="mt-1 font-telugu text-xl text-champagne/95 sm:text-2xl" style={{ animation: "rise-in 1.6s .8s both" }}>
-          {couple.bride.name.te} &amp; {couple.groom.name.te}
+          {couple.bride.full.te} &amp; {couple.groom.name.te}
         </p>
         <p className="label mt-4 text-ivory/80" style={{ animation: "rise-in 1.6s 1s both" }}>
           The Wedding Invitation · శుభ వివాహ ఆహ్వానం
