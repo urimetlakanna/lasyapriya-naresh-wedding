@@ -4,6 +4,10 @@ import { Corners, Divider, Mandala, Reveal } from "../ornaments";
 
 export function Families() {
   const { t, u } = useLang();
+  const groups = [
+    { key: "bride", label: "Bride’s Family", telugu: "వధువు కుటుంబం", people: families.bride },
+    { key: "groom", label: "Groom’s Family", telugu: "వరుడి కుటుంబం", people: families.groom },
+  ];
   return (
     <section id="families" className="relative overflow-hidden bg-wine px-5 py-24 text-ivory sm:py-28">
       <Mandala
@@ -11,24 +15,28 @@ export function Families() {
         style={{ animation: "spin-slow 260s linear infinite" }}
       />
       <Corners className="text-gold/40" />
-      <div className="relative mx-auto max-w-3xl">
+      <div className="relative mx-auto max-w-4xl">
         <Reveal className="text-center">
           <p className="label text-champagne">{u("shubhamastu")}</p>
           <h2 className="gold-text mt-2 font-script text-5xl leading-snug sm:text-6xl">{u("familiesTitle")}</h2>
           <Divider light className="mt-5" />
         </Reveal>
-        <Reveal variant="zoom" className="relative mx-auto mt-12 max-w-2xl rounded-[28px] border border-gold/35 bg-black/15 px-6 py-10 text-center backdrop-blur-sm sm:px-10">
-          <Mandala className="mx-auto mb-4 h-12 w-12 text-gold/80" />
-          <p className="label text-champagne">{u("invitedBy")}</p>
-          <div className="mx-auto my-5 h-px w-20 bg-gradient-to-r from-transparent via-gold to-transparent" />
-          <ul className="space-y-5">
-            {families.bride.map((n) => (
-              <li key={n.en} className="font-display text-xl leading-snug text-ivory sm:text-2xl">
-                {t(n)}
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {groups.map((group) => (
+            <Reveal key={group.key} variant="zoom" className="relative rounded-[28px] border border-gold/35 bg-black/15 px-6 py-10 text-center backdrop-blur-sm sm:px-8">
+              <Mandala className="mx-auto mb-4 h-12 w-12 text-gold/80" />
+              <p className="label text-champagne">{u(group.key === "bride" ? "brideFamily" : "groomFamily")}</p>
+              <div className="mx-auto my-5 h-px w-20 bg-gradient-to-r from-transparent via-gold to-transparent" />
+              <ul className="space-y-5">
+                {group.people.map((n) => (
+                  <li key={n.en} className="font-display text-lg leading-snug text-ivory sm:text-xl">
+                    {t(n)}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

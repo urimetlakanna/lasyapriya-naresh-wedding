@@ -37,7 +37,9 @@ export const families = {
     { en: "Smt. & Sri Pittala Laxmi – Ramesh Mudhiraj", te: "శ్రీమతి & శ్రీ పిట్టల లక్ష్మి – రమేష్ ముదిరాజ్" },
     { en: "Smt. & Sri Pittala Padma – Ravi Mudhiraj", te: "శ్రీమతి & శ్రీ పిట్టల పద్మ – రవి ముదిరాజ్" },
   ] as Bi[],
-  groom: [] as Bi[],
+  groom: [
+    { en: "Kolu Laxmi – (Late) Yadaiah", te: "కొల్లు లక్ష్మి – (స్వర్గీయ) యాదయ్య" },
+  ] as Bi[],
 };
 
 export type EventData = {
@@ -71,9 +73,9 @@ export const events: EventData[] = [
     year: 2026,
     weekday: { en: "Tuesday", te: "మంగళవారం" },
     time: null,
-    venueName: { en: "Venue to be announced", te: "వేదిక త్వరలో తెలియజేయబడును" },
-    address: null,
-    mapQuery: "Ramakrishnapur, Mancherial, Telangana",
+    venueName: { en: "Mallikarjun Nagar, RKP", te: "మల్లికార్జున్ నగర్, ఆర్.కె.పి." },
+    address: { en: "Mallikarjun Nagar, Ramakrishnapur, Mancherial District, Telangana.", te: "మల్లికార్జున్ నగర్, రామకృష్ణాపూర్, మంచిర్యాల జిల్లా, తెలంగాణ." },
+    mapQuery: "Mallikarjun Nagar, Ramakrishnapur, Mancherial, Telangana",
   },
   {
     id: "wedding",
@@ -106,9 +108,9 @@ export const events: EventData[] = [
     year: 2026,
     weekday: { en: "Thursday", te: "గురువారం" },
     time: null,
-    venueName: { en: "Venue to be announced", te: "వేదిక త్వరలో తెలియజేయబడును" },
+    venueName: { en: "MK Function Hall", te: "ఎం.కె. ఫంక్షన్ హాల్" },
     address: null,
-    mapQuery: "Pochamma Gally, Armoor, Telangana",
+    mapQuery: "MK Function Hall, Armoor, Telangana",
   },
 ];
 
