@@ -38,8 +38,13 @@ export function LangProvider({ children }: { children: ReactNode }) {
     () => ({
       lang,
       setLang,
-      t: (b) => b[lang],
-      u: (k) => (ui[k] as Bi)[lang],
+      t: (b) => (b && typeof b === "object" && typeof b[lang] === "string" ? b[lang] : ""),
+      u: (k) => {
+        const value = ui[k] as Bi | string | undefined;
+        if (typeof value === "string") return value;
+        if (value && typeof value[lang] === "string") return value[lang];
+        return String(k);
+      },
     }),
     [lang, setLang],
   );

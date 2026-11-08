@@ -173,6 +173,7 @@ export const ui = {
 
   familiesTitle: { en: "With the Blessings of", te: "వీరి ఆశీస్సులతో" },
   brideFamily: { en: "Bride’s Family", te: "వధువు కుటుంబం" },
+  groomFamily: { en: "Groom’s Family", te: "వరుడి కుటుంబం" },
   invitedBy: { en: "Invited By", te: "ఆహ్వానించువారు" },
 
   celebrations: { en: "The Celebrations", te: "వేడుకలు" },
