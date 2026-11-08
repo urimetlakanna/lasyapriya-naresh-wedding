@@ -29,7 +29,7 @@ export function Share() {
 
   const native = () =>
     navigator
-      .share({ title: "Lasyapriya & Naresh — Wedding Invitation", text: shareMessage(""), url: pageUrl() })
+      .share({ title: "Lasya Priya & Naresh — Wedding Invitation", text: shareMessage(""), url: pageUrl() })
       .catch(() => undefined);
 
   return (

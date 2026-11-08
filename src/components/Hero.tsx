@@ -41,7 +41,7 @@ export function Hero({ started }: { started: boolean }) {
               className="arch relative overflow-hidden p-[5px] shadow-[0_30px_80px_-20px_rgba(0,0,0,.8)]"
               style={{ background: "linear-gradient(135deg,#8c6b26,#f6e7b4,#b8923f,#f0dc9a,#8c6b26)" }}
             >
-              <Crop spec={crops.hero} eager className="arch" alt="Lasyapriya and Naresh" />
+              <Crop spec={crops.hero} eager className="arch" alt="Lasya Priya and Naresh" />
               <div className="pointer-events-none absolute inset-[5px] arch bg-gradient-to-t from-wine/45 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-5 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-gold/70 bg-wine px-5 py-1.5 text-champagne shadow-xl">

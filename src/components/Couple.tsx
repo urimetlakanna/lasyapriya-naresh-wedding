@@ -90,7 +90,7 @@ export function CoupleSection() {
               className="relative p-1 shadow-[0_30px_60px_-25px_rgba(63,14,25,.6)]"
               style={{ background: "linear-gradient(135deg,#8c6b26,#f6e7b4,#b8923f,#f0dc9a,#8c6b26)" }}
             >
-              <Crop spec={crops.together} alt="Lasyapriya and Naresh together" />
+              <Crop spec={crops.together} alt="Lasya Priya and Naresh together" />
             </div>
             <figcaption className="mt-9 text-center font-script text-3xl text-burgundy sm:text-4xl">{u("togetherCaption")}</figcaption>
           </figure>

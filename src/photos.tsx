@@ -93,7 +93,7 @@ function Placeholder({ r, className }: { r: number; className?: string }) {
 export function Crop({
   spec,
   className,
-  alt = "Lasyapriya and Naresh",
+  alt = "Lasya Priya and Naresh",
   eager,
 }: {
   spec: CropSpec;

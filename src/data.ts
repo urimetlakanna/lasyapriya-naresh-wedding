@@ -15,9 +15,9 @@ export const WEDDING_MOMENT = "2026-11-18T10:12:00+05:30";
 
 export const couple = {
   bride: {
-    name: { en: "Lasyapriya", te: "లాస్యప్రియ" },
+    name: { en: "Lasya Priya", te: "లాస్య ప్రియ" },
     nick: { en: "Priyanka", te: "ప్రియాంక" },
-    full: { en: "Lasyapriya (Priyanka)", te: "లాస్యప్రియ (ప్రియాంక)" },
+    full: { en: "Lasya Priya (Priyanka)", te: "లాస్య ప్రియ (ప్రియాంక)" },
     qual: { en: "M.Pharm", te: "ఎం.ఫార్మ్" },
   },
   groom: {
@@ -34,13 +34,10 @@ export const couple = {
  */
 export const families = {
   bride: [
-    { en: "Shri P. Laxmi – Ramesh Mudhiraj", te: "శ్రీ పి. లక్ష్మి – రమేష్ ముదిరాజ్" },
-    { en: "Shri P. Vaddya – Ravi Mudhiraj", te: "శ్రీ పి. వడ్యా – రవి ముదిరాజ్" },
+    { en: "Smt. & Sri Pittala Laxmi – Ramesh Mudhiraj", te: "శ్రీమతి & శ్రీ పిట్టల లక్ష్మి – రమేష్ ముదిరాజ్" },
+    { en: "Smt. & Sri Pittala Padma – Ravi Mudhiraj", te: "శ్రీమతి & శ్రీ పిట్టల పద్మ – రవి ముదిరాజ్" },
   ] as Bi[],
-  groom: [
-    { en: "Shri P. Pittala Laxmi – Ramesh Mudhiraj", te: "శ్రీ పి. పిట్టల లక్ష్మి – రమేష్ ముదిరాజ్" },
-    { en: "Shri P. Sri Pitta Padmini – Ravi Mudhiraj", te: "శ్రీ పి. శ్రీ పిట్ట పద్మిని – రవి ముదిరాజ్" },
-  ] as Bi[],
+  groom: [] as Bi[],
 };
 
 export type EventData = {
@@ -82,8 +79,8 @@ export const events: EventData[] = [
     id: "wedding",
     title: { en: "Wedding Ceremony", te: "వివాహ మహోత్సవం" },
     blurb: {
-      en: "The sacred union of Lasyapriya & Naresh.",
-      te: "లాస్యప్రియ & నరేష్ ల పవిత్ర వివాహ బంధం.",
+      en: "The sacred union of Lasya Priya & Naresh.",
+      te: "లాస్య ప్రియ & నరేష్ ల పవిత్ర వివాహ బంధం.",
     },
     day: 18,
     month: NOV,
@@ -135,8 +132,8 @@ export type CropSpec = { source: "landscape" | "portrait"; fx: number; fy: numbe
 
 export const crops = {
   hero: { source: "landscape", index: 0, fx: 0.43, fy: 0.5, zoom: 1.04, r: 0.8 } as CropSpec,
-  bride: { source: "portrait", index: 8, fx: 0.5, fy: 0.48, zoom: 1.12, r: 0.8 } as CropSpec,
-  groom: { source: "portrait", index: 7, fx: 0.5, fy: 0.43, zoom: 1.08, r: 0.8 } as CropSpec,
+  bride: { source: "portrait", index: 7, fx: 0.5, fy: 0.48, zoom: 1.12, r: 0.8 } as CropSpec,
+  groom: { source: "portrait", index: 6, fx: 0.5, fy: 0.43, zoom: 1.08, r: 0.8 } as CropSpec,
   together: { source: "landscape", index: 1, fx: 0.5, fy: 0.5, zoom: 1, r: 1.5 } as CropSpec,
 };
 
@@ -146,7 +143,7 @@ export const gallery: { crop: CropSpec; label: Bi }[] = [
   { crop: { source: "portrait", index: 2, fx: 0.5, fy: 0.52, zoom: 1, r: 0.78 }, label: { en: "Closer, always", te: "ఎప్పటికీ దగ్గరగా" } },
   { crop: { source: "portrait", index: 3, fx: 0.5, fy: 0.5, zoom: 1, r: 0.78 }, label: { en: "Together in blessings", te: "ఆశీస్సులతో కలిసిన వేళ" } },
   { crop: { source: "portrait", index: 4, fx: 0.5, fy: 0.44, zoom: 1, r: 0.78 }, label: { en: "The Groom · Naresh", te: "వరుడు · నరేష్" } },
-  { crop: { source: "portrait", index: 5, fx: 0.5, fy: 0.45, zoom: 1, r: 0.78 }, label: { en: "The Bride · Lasyapriya", te: "వధువు · లాస్యప్రియ" } },
+  { crop: { source: "portrait", index: 5, fx: 0.5, fy: 0.45, zoom: 1, r: 0.78 }, label: { en: "The Bride · Lasya Priya", te: "వధువు · లాస్య ప్రియ" } },
   { crop: { source: "portrait", index: 6, fx: 0.5, fy: 0.48, zoom: 1, r: 0.78 }, label: { en: "A tender embrace", te: "ఓ ఆప్యాయ ఆలింగనం" } },
   { crop: { source: "landscape", index: 7, fx: 0.48, fy: 0.5, zoom: 1, r: 1.15 }, label: { en: "A frame to remember", te: "ఎప్పటికీ గుర్తుండే చిత్రం" } },
   { crop: { source: "landscape", index: 8, fx: 0.5, fy: 0.5, zoom: 1, r: 1.15 }, label: { en: "Our beginning", te: "మా కొత్త ఆరంభం" } },
@@ -165,7 +162,7 @@ export const ui = {
   inviteTe:
     "పెద్దల ఆశీస్సులతో, భగవంతుని కృపతో లాస్యప్రియ (ప్రియాంక) మరియు నరేష్ ముదిరాజ్ ల వివాహ మహోత్సవానికి మీరు కుటుంబ సమేతంగా విచ్చేసి, నూతన వధూవరులను ఆశీర్వదించవలసిందిగా సవినయంగా కోరుతున్నాము.",
   inviteEn:
-    "With the blessings of our elders and the grace of the Almighty, we joyfully invite you and your family to the wedding of Lasyapriya (Priyanka) and Naresh Mudhiraj, and to bless the newly-wedded couple with your presence.",
+    "With the blessings of our elders and the grace of the Almighty, we joyfully invite you and your family to the wedding of Lasya Priya (Priyanka) and Naresh Mudhiraj, and to bless the newly-wedded couple with your presence.",
 
   theCouple: { en: "The Couple", te: "వధూవరులు" },
   bride: { en: "The Bride", te: "వధువు" },
@@ -174,7 +171,6 @@ export const ui = {
 
   familiesTitle: { en: "With the Blessings of", te: "వీరి ఆశీస్సులతో" },
   brideFamily: { en: "Bride’s Family", te: "వధువు కుటుంబం" },
-  groomFamily: { en: "Groom’s Family", te: "వరుడి కుటుంబం" },
 
   celebrations: { en: "The Celebrations", te: "వేడుకలు" },
   celebrationsSub: { en: "Three auspicious days · Three joyous gatherings", te: "మూడు శుభ దినాలు · మూడు ఆనంద వేడుకలు" },
@@ -217,7 +213,7 @@ export const ui = {
     en: "Come, bless us as we begin our new life together.",
     te: "మా నూతన జీవిత ప్రయాణాన్ని మీ ఆశీస్సులతో ప్రారంభించనివ్వండి.",
   },
-  closingSign: { en: "With love, the families of Lasyapriya & Naresh", te: "ప్రేమతో, లాస్యప్రియ & నరేష్ కుటుంబాలు" },
+  closingSign: { en: "With love, Lasya Priya & Naresh", te: "ప్రేమతో, లాస్య ప్రియ & నరేష్" },
   backToTop: { en: "Back to the beginning", te: "మొదటికి వెళ్ళండి" },
 
   musicOn: { en: "Pause music", te: "సంగీతం ఆపండి" },
@@ -230,10 +226,10 @@ export type UiKey = {
 }[keyof typeof ui];
 
 export const shareMessage = (url: string) =>
-  `🙏 శుభమస్తు! లాస్యప్రియ (ప్రియాంక) & నరేష్ ముదిరాజ్ ల వివాహ మహోత్సవానికి మిమ్మల్ని కుటుంబ సమేతంగా సాదరంగా ఆహ్వానిస్తున్నాము.\n` +
+  `🙏 శుభమస్తు! లాస్య ప్రియ (ప్రియాంక) & నరేష్ ముదిరాజ్ ల వివాహ మహోత్సవానికి మిమ్మల్ని కుటుంబ సమేతంగా సాదరంగా ఆహ్వానిస్తున్నాము.\n` +
   `📅 18 నవంబర్ 2026 (బుధవారం) · ముహూర్తం ఉదయం 10:12\n` +
   `📍 రామకృష్ణాపూర్, మంచిర్యాల జిల్లా\n\n` +
-  `🙏 Shubhamastu! You are warmly invited to the wedding of Lasyapriya (Priyanka) & Naresh Mudhiraj.\n` +
+  `🙏 Shubhamastu! You are warmly invited to the wedding of Lasya Priya (Priyanka) & Naresh Mudhiraj.\n` +
   `📅 Wednesday, 18 November 2026 · Muhurtham 10:12 AM\n` +
   `📍 Ramakrishnapur, Mancherial District\n\n` +
   `${url}`;
