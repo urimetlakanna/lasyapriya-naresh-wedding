@@ -19,7 +19,7 @@ export function Families() {
         </Reveal>
         <Reveal variant="zoom" className="relative mx-auto mt-12 max-w-2xl rounded-[28px] border border-gold/35 bg-black/15 px-6 py-10 text-center backdrop-blur-sm sm:px-10">
           <Mandala className="mx-auto mb-4 h-12 w-12 text-gold/80" />
-          <p className="label text-champagne">{u("brideFamily")}</p>
+          <p className="label text-champagne">{u("invitedBy")}</p>
           <div className="mx-auto my-5 h-px w-20 bg-gradient-to-r from-transparent via-gold to-transparent" />
           <ul className="space-y-5">
             {families.bride.map((n) => (

@@ -61,31 +61,29 @@ export function Hero({ started }: { started: boolean }) {
           <h1 className="mt-5">
             <span
               className={cn(
-                "hero-anim gold-text block font-script leading-[1.25]",
+                "hero-anim gold-text block font-script leading-[1.2]",
                 te ? "text-5xl sm:text-6xl lg:text-7xl" : "text-6xl sm:text-7xl lg:text-8xl",
               )}
               style={d(600)}
             >
               {t(couple.bride.name)}
             </span>
-            <span className="hero-anim block font-script text-4xl text-champagne" style={d(800)}>
+            <span className="hero-anim mt-1 block text-base italic text-champagne/80 sm:text-lg" style={d(700)}>
+              ({t(couple.bride.nick)})
+            </span>
+            <span className="hero-anim mt-3 block font-script text-4xl text-champagne" style={d(800)}>
               &amp;
             </span>
             <span
               className={cn(
-                "hero-anim gold-text block font-script leading-[1.25]",
+                "hero-anim gold-text block font-script leading-[1.2]",
                 te ? "text-5xl sm:text-6xl lg:text-7xl" : "text-6xl sm:text-7xl lg:text-8xl",
               )}
               style={d(1000)}
             >
-              {t(couple.groom.name)}
+              {t(couple.groom.full)}
             </span>
           </h1>
-
-          <div className="hero-anim mt-2 space-y-1 italic text-champagne/80" style={d(1100)}>
-            <p>({t(couple.bride.nick)})</p>
-            <p>{t(couple.groom.surname)}</p>
-          </div>
 
           <div
             className="hero-anim mx-auto mt-7 inline-flex flex-col items-center gap-1 rounded-2xl border border-gold/50 bg-black/15 px-8 py-4 backdrop-blur-sm lg:mx-0 lg:items-start"
